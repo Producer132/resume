@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="I9rhOceGg9w-ac0GqqiuapHX6a0HocuBKVUM9SQeXG0" />
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="box">
+    <h2>Your daily task</h2>
+
+    <div class="inputRow">
+      <input class="input" type="text" placeholder="Enter a task..." />
+      <button onclick="addTask()">Add</button>
+    </div>
+
+    <ul id="list"></ul>
+  </dive
+
+  <!-- EDIT POPUP -->
+  <div id="modal" class="modal">
+    <div class="modalBox">
+
+      <h3>Edit Task</h3>
+
+      <input id="editInput" type="text">
+
+      <p id="editError" class="error"></p>
+
+      <div class="modalBtns">
+        <button onclick="updateTask()" class="updateBtn">Update</button>
+        <button onclick="closeModal()" class="cancelBtn">Cancel</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
