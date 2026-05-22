@@ -3,41 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="I9rhOceGg9w-ac0GqqiuapHX6a0HocuBKVUM9SQeXG0" />
-  <title>Todo App</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Mehtab Alam | Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=7">
 </head>
-
 <body>
+  <header class="header">
+    <a class="logo" href="#">Mehtab</a>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#demos">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <div class="box">
-    <h2>Your daily task</h2>
-
-    <div class="inputRow">
-      <input class="input" type="text" placeholder="Enter a task..." />
-      <button onclick="addTask()">Add</button>
-    </div>
-
-    <ul id="list"></ul>
-  </dive
-
-  <!-- EDIT POPUP -->
-  <div id="modal" class="modal">
-    <div class="modalBox">
-
-      <h3>Edit Task</h3>
-
-      <input id="editInput" type="text">
-
-      <p id="editError" class="error"></p>
-
-      <div class="modalBtns">
-        <button onclick="updateTask()" class="updateBtn">Update</button>
-        <button onclick="closeModal()" class="cancelBtn">Cancel</button>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-photo">
+        <img src="image.png" alt="Mehtab Alam profile">
       </div>
 
-    </div>
-  </div>
+      <div class="hero-content">
+        <p class="small-title">Hello</p>
+        <h1>I am <br>Mehtab Alam</h1>
+        <h2>A Frontend Developer</h2>
+        <p class="intro">
+          I am a frontend developer from Bahawalpur. I build clean, responsive, and user-friendly websites, and I have completed a 1 year internship at Enigmatix.
+        </p>
+
+        <div class="quick-actions">
+          <a class="circle yellow" href="#resume">Resume</a>
+          <a class="circle red" href="#demos">Skills</a>
+          <a class="circle blue" href="#contact">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div>
+        <span class="section-tag">About Me</span>
+        <h2>Frontend developer focused on clean and responsive websites.</h2>
+      </div>
+      <p>
+        My name is Mehtab Alam. I have completed matric and worked as a frontend developer intern at Enigmatix for 1 year. My goal is to become a professional web developer and create modern websites that look good on desktop and mobile screens.
+      </p>
+    </section>
+
+    <section id="demos" class="demos">
+      <div class="section-heading">
+        <span class="section-tag">Demo Projects</span>
+        <h2>Frontend practice areas</h2>
+      </div>
+
+      <div class="demo-grid">
+        <article class="demo-card active" data-title="Responsive Web Design" data-detail="I create layouts that adjust properly on different screen sizes. This includes mobile menus, flexible grids, readable text, clean spacing, and sections that stay easy to use on mobile, tablet, and desktop.">
+          <div class="demo-preview preview-one">
+            <span>01</span>
+          </div>
+          <h3>Responsive Web Design</h3>
+          <p>I build responsive web pages that look clean and work smoothly on mobile, tablet, and desktop screens.</p>
+        </article>
+
+        <article class="demo-card" data-title="Frontend Development" data-detail="I work on the visible part of websites using HTML, CSS, and JavaScript. I can build page sections, navigation bars, buttons, cards, forms, portfolio pages, and simple interactive website features.">
+          <div class="demo-preview preview-two">
+            <span>02</span>
+          </div>
+          <h3>Frontend Development</h3>
+          <p>I create website layouts, sections, and user interfaces using HTML, CSS, JavaScript, and modern styling.</p>
+        </article>
+
+        <article class="demo-card" data-title="Internship Experience" data-detail="I completed a 1 year frontend development internship at Enigmatix, where I practiced building clean website interfaces and improved my understanding of real development work.">
+          <div class="demo-preview preview-three">
+            <span>03</span>
+          </div>
+          <h3>Internship Experience</h3>
+          <p>Completed a 1 year frontend development internship at Enigmatix.</p>
+        </article>
+      </div>
+
+      <div class="section-heading resume-heading">
+        <span class="section-tag">Resume</span>
+        <h2>My CV</h2>
+      </div>
+      
+      <article id="resume" class="cv-card" data-title="My CV" data-detail="My CV includes my education, contact information, frontend development field, and 1 year internship experience. You can view it online or download it from this card.">
+        <div class="cv-thumb">
+          <img src="cv.png" alt="Mehtab Alam CV">
+        </div>
+        <div class="cv-content">
+          <span class="section-tag">Resume</span>
+          <h3>My CV</h3>
+          <p>View or download my CV for education, contact, and career details.</p>
+          <div class="card-actions">
+            <a href="cv.html" target="_blank">View CV</a>
+            <a href="cv.png" download="Mehtab-Alam-CV.png">Download CV</a>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <section id="contact" class="contact">
+      <span class="section-tag">Contact</span>
+      <h2>Let's work together</h2>
+      <p>City: Bahawalpur</p>
+      <p>Email: <a href="mailto:gangsteralam36@gmail.com">gangsteralam36@gmail.com</a></p>
+      <p>Phone: <a href="tel:+923284359458">+92 328 4359458</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Copyright 2026 | Mehtab Alam Portfolio</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
