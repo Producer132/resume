@@ -63,7 +63,8 @@ a {
   max-width: 100%;
   justify-self: center;
   overflow: hidden;
-  border: 14px solid #c9c9cde;
+  border: 14px solid;
+  border-color:aquamarine;
   border-radius: 50%;
   box-shadow: 0 22px 45px rgba(0, 0, 0, 0.12);
   position: relative;
