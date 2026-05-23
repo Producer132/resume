@@ -10,7 +10,7 @@ html {
 
 body {
   min-height: 100vh;
-  background: #f7f7f4;
+  background: white;
   color: #151515;
   font-family: Poppins, Arial, sans-serif;
 }
@@ -63,8 +63,7 @@ a {
   max-width: 100%;
   justify-self: center;
   overflow: hidden;
-  border: 14px solid;
-  border-color:aquamarine;
+  border: 14px solid #c9c9cd;
   border-radius: 50%;
   box-shadow: 0 22px 45px rgba(0, 0, 0, 0.12);
   position: relative;
@@ -156,6 +155,7 @@ h1 {
 
 .about,
 .demos,
+.resume-section,
 .contact {
   max-width: 1120px;
   margin: 0 auto;
@@ -197,10 +197,6 @@ h1 {
   margin-bottom: 28px;
 }
 
-.resume-heading {
-  margin-top: 44px;
-}
-
 .section-heading p {
   margin-top: 10px;
   color: #666;
@@ -218,7 +214,7 @@ h1 {
   grid-template-columns: 260px 1fr;
   gap: 24px;
   align-items: center;
-  margin-top: 22px;
+  margin-top: 0;
   padding: 18px;
   border: 1px solid transparent;
   border-radius: 6px;
